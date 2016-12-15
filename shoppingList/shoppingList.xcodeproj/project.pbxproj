@@ -16,6 +16,7 @@
 		04F1300D1DFF824C00EDB83C /* shoppingListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1300C1DFF824C00EDB83C /* shoppingListUITests.swift */; };
 		04F1301B1DFF8DC800EDB83C /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1301A1DFF8DC800EDB83C /* ItemsViewController.swift */; };
 		04F1301D1DFF923000EDB83C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1301C1DFF923000EDB83C /* Item.swift */; };
+		ECF2756B1E0240BA00850FF7 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF2756A1E0240BA00850FF7 /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		04F1300E1DFF824C00EDB83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F1301A1DFF8DC800EDB83C /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		04F1301C1DFF923000EDB83C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
+		ECF2756A1E0240BA00850FF7 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				04F1301C1DFF923000EDB83C /* Item.swift */,
+				ECF2756A1E0240BA00850FF7 /* ItemStore.swift */,
 				04F12FE91DFF824B00EDB83C /* AppDelegate.swift */,
 				04F12FED1DFF824B00EDB83C /* Main.storyboard */,
 				04F12FF31DFF824C00EDB83C /* Assets.xcassets */,
@@ -271,6 +274,7 @@
 				04F1301D1DFF923000EDB83C /* Item.swift in Sources */,
 				04F1301B1DFF8DC800EDB83C /* ItemsViewController.swift in Sources */,
 				04F12FEA1DFF824B00EDB83C /* AppDelegate.swift in Sources */,
+				ECF2756B1E0240BA00850FF7 /* ItemStore.swift in Sources */,
 				04F12FF21DFF824C00EDB83C /* shoppingList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +526,7 @@
 				04F130131DFF824C00EDB83C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F130141DFF824C00EDB83C /* Build configuration list for PBXNativeTarget "shoppingListTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +535,7 @@
 				04F130161DFF824C00EDB83C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F130171DFF824C00EDB83C /* Build configuration list for PBXNativeTarget "shoppingListUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +544,7 @@
 				04F130191DFF824C00EDB83C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
