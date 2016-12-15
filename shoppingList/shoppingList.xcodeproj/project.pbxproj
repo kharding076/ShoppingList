@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		04F12FEA1DFF824B00EDB83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F12FE91DFF824B00EDB83C /* AppDelegate.swift */; };
-		04F12FEC1DFF824B00EDB83C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F12FEB1DFF824B00EDB83C /* ViewController.swift */; };
 		04F12FEF1DFF824B00EDB83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F12FED1DFF824B00EDB83C /* Main.storyboard */; };
 		04F12FF21DFF824C00EDB83C /* shoppingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F12FF01DFF824C00EDB83C /* shoppingList.xcdatamodeld */; };
 		04F12FF41DFF824C00EDB83C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F12FF31DFF824C00EDB83C /* Assets.xcassets */; };
 		04F12FF71DFF824C00EDB83C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F12FF51DFF824C00EDB83C /* LaunchScreen.storyboard */; };
 		04F130021DFF824C00EDB83C /* shoppingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F130011DFF824C00EDB83C /* shoppingListTests.swift */; };
 		04F1300D1DFF824C00EDB83C /* shoppingListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1300C1DFF824C00EDB83C /* shoppingListUITests.swift */; };
+		04F1301B1DFF8DC800EDB83C /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1301A1DFF8DC800EDB83C /* ItemsViewController.swift */; };
+		04F1301D1DFF923000EDB83C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1301C1DFF923000EDB83C /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		04F12FE61DFF824B00EDB83C /* shoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F12FE91DFF824B00EDB83C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04F12FEB1DFF824B00EDB83C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04F12FEE1DFF824B00EDB83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04F12FF11DFF824C00EDB83C /* shoppingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shoppingList.xcdatamodel; sourceTree = "<group>"; };
 		04F12FF31DFF824C00EDB83C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		04F130081DFF824C00EDB83C /* shoppingListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shoppingListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F1300C1DFF824C00EDB83C /* shoppingListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoppingListUITests.swift; sourceTree = "<group>"; };
 		04F1300E1DFF824C00EDB83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F1301A1DFF8DC800EDB83C /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		04F1301C1DFF923000EDB83C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,14 @@
 		04F12FE81DFF824B00EDB83C /* shoppingList */ = {
 			isa = PBXGroup;
 			children = (
+				04F1301C1DFF923000EDB83C /* Item.swift */,
 				04F12FE91DFF824B00EDB83C /* AppDelegate.swift */,
-				04F12FEB1DFF824B00EDB83C /* ViewController.swift */,
 				04F12FED1DFF824B00EDB83C /* Main.storyboard */,
 				04F12FF31DFF824C00EDB83C /* Assets.xcassets */,
 				04F12FF51DFF824C00EDB83C /* LaunchScreen.storyboard */,
 				04F12FF81DFF824C00EDB83C /* Info.plist */,
 				04F12FF01DFF824C00EDB83C /* shoppingList.xcdatamodeld */,
+				04F1301A1DFF8DC800EDB83C /* ItemsViewController.swift */,
 			);
 			path = shoppingList;
 			sourceTree = "<group>";
@@ -265,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F12FEC1DFF824B00EDB83C /* ViewController.swift in Sources */,
+				04F1301D1DFF923000EDB83C /* Item.swift in Sources */,
+				04F1301B1DFF8DC800EDB83C /* ItemsViewController.swift in Sources */,
 				04F12FEA1DFF824B00EDB83C /* AppDelegate.swift in Sources */,
 				04F12FF21DFF824C00EDB83C /* shoppingList.xcdatamodeld in Sources */,
 			);
